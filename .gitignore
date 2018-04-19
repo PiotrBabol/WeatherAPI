@@ -15,3 +15,6 @@ buildNumber.properties
 
 .idea
 *.iml
+/APIKEY.txt
+src/main/resources/
+src/test/

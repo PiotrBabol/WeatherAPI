@@ -28,7 +28,7 @@ public class Pogodynka {
 
         /*Call<TheWeather> forcast = openWeatherMap.currentByCity(
                 "Piotrkow Trybunalski,pl",
-                "1c787a838dea8e660fe2505522598fd7",
+                "YOUR API FROM OPENWEATHERMAP GOES HERE",
                 "metric",
                 "pl"
         );
@@ -36,7 +36,7 @@ public class Pogodynka {
         Call<TheWeather> forcastByLonLat = openWeatherMap.currentByGeo(
                 45.583333,
                 9.266667,
-                "1c787a838dea8e660fe2505522598fd7",
+                "YOUR API FROM OPENWEATHERMAP GOES HERE",
                 "metric",
                 "pl"
         );*/
@@ -44,7 +44,7 @@ public class Pogodynka {
 //        while (true) {
             /*CompletableFuture<TheWeather> forcast = openWeatherMap.currentByCity(
                     "Piotrkow Trybunalski,pl",
-                    "1c787a838dea8e660fe2505522598fd7",
+                    "YOUR API FROM OPENWEATHERMAP GOES HERE",
                     "metric",
                     "pl"
             );
@@ -52,13 +52,13 @@ public class Pogodynka {
             CompletableFuture<TheWeather> forcastByLonLat = openWeatherMap.currentByGeo(
                     45.583333,
                     9.266667,
-                    "1c787a838dea8e660fe2505522598fd7",
+                    "YOUR API FROM OPENWEATHERMAP GOES HERE",
                     "metric",
                     "pl"
             );*/
 
-        Call<TheWeather> forcast1 = new RequestBuilder("1c787a838dea8e660fe2505522598fd7").byCity("łódź,pl").build();
-        Call<TheWeather> forcast2 = new RequestBuilder("1c787a838dea8e660fe2505522598fd7").byCoor(45.583333, 9.266667).build();
+        Call<TheWeather> forcast1 = new RequestBuilder("YOUR API FROM OPENWEATHERMAP GOES HERE").byCity("łódź,pl").build();
+        Call<TheWeather> forcast2 = new RequestBuilder("YOUR API FROM OPENWEATHERMAP GOES HERE").byCoor(45.583333, 9.266667).build();
 
 
         pobierzIWyswietl(forcast1, "by name");
